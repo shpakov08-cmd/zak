@@ -1,0 +1,183 @@
+header {
+    text-align: center;
+    width: 100%;
+    height: 40px;
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.icone {
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.ser {
+    width: 25px;
+    height: 25px;
+}
+
+body {
+    background-color: rgb(211, 211, 211);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.content {
+    margin-top: 60px;
+    padding: 20px;
+    flex: 1;
+}
+
+.list {
+    height: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.image-container {
+    position: relative;
+    display: inline-block;
+}
+
+.box {
+    width: 300px;
+    display: block;
+}
+
+.z {
+    width: 170px;
+    height: 80px;
+    opacity: 0.5; 
+    background: rgb(77, 77, 255);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.block {
+    width: 90%;
+    background: rgb(77, 77, 255);
+    border-radius: 20px;
+    color: white;
+    font-size: 16px;
+    margin: 0 auto 20px;
+    padding: 25px;
+    box-sizing: border-box;
+}
+
+.txt {
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.child-state {
+    font-style: italic;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #e0e0e0;
+}
+
+.parent-actions {
+    margin-bottom: 20px;
+}
+
+.action-item {
+    padding: 12px 15px;
+    margin-bottom: 10px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    color: black;
+}
+
+.action-item.choice {
+    background-color: #ffffff;
+    border-left-color: #a0d2ff;
+}
+
+.action-text {
+    line-height: 1.5;
+}
+
+.parent-words {
+    padding-top: 15px;
+    border-top: 1px dashed rgba(255, 255, 255, 0.3);
+}
+
+.parent-label {
+    font-size: 14px;
+    color: #e0e0e0;
+    font-weight: 500;
+}
+
+footer {
+    background-color: black;
+    width: 100%;
+    padding: 20px 0;
+    margin-top: auto;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    gap: 10px;
+}
+
+.telegram-contact {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 18px;
+}
+
+.telegram-contact img {
+    width: 10px;
+    height: 10px;
+}
+
+.phone-contact {
+    font-size: 18px;
+}
+
+@media (max-width: 768px) {
+    .icone {
+        font-size: 24px;
+    }
+    
+    .box {
+        width: 250px;
+    }
+    
+    .block {
+        width: 95%;
+        padding: 15px;
+    }
+    
+    .telegram-contact, .phone-contact {
+        font-size: 16px;
+    }
+}
