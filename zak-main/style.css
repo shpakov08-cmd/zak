@@ -1,0 +1,226 @@
+header {
+    text-align: center;
+    width: 100%;
+    height: 40px;
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.icone {
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.ser {
+    width: 25px;
+    height: 25px;
+}
+
+body {
+    background-color: rgb(211, 211, 211);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.content {
+    margin-top: 60px;
+    padding: 20px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.list {
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.image-container {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    max-width: 500px; /* Фиксированная максимальная ширина */
+}
+
+/* ИСПРАВЛЕНИЕ: одинаковые фиксированные размеры */
+.box {
+    width: 500px; /* Фиксированная ширина */
+    height: 300px; /* Фиксированная высота */
+    display: block;
+    border-radius: 20px;
+    object-fit: cover; /* Обрезает изображение чтобы заполнить контейнер */
+    object-position: center; /* Центрирует изображение */
+}
+
+/* СТИЛИ ДЛЯ КАРТОЧКИ */
+.card-overlay {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 109, 0.8);
+    padding: 12px 60px;
+    border-radius: 12px;
+    text-align: center;
+    min-width: 250px;
+    width: 80%;
+    max-width: 400px;
+    box-sizing: border-box;
+}
+
+.card-title {
+    color: white;
+    font-size: 26px;
+    font-weight: bold;
+    margin: 0;
+    text-align: center;
+    white-space: nowrap;
+    line-height: 1.2;
+}
+
+footer {
+    background-color: black;
+    width: 100%;
+    padding: 15px 0;
+    margin-top: 20px;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    gap: 8px;
+}
+
+.telegram-contact {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 16px;
+}
+
+.telegram-contact img {
+    width: 10px;
+    height: 10px;
+}
+
+.phone-contact {
+    font-size: 16px;
+}
+
+@media (max-width: 768px) {
+    .icone {
+        font-size: 24px;
+    }
+    
+    .image-container {
+        width: 85%;
+        max-width: 400px;
+    }
+    
+    .box {
+        width: 100%; /* На мобильных занимает всю ширину контейнера */
+        height: 250px;
+        max-width: 400px;
+    }
+    
+    .telegram-contact, .phone-contact {
+        font-size: 14px;
+    }
+    
+    .card-overlay {
+        bottom: 25px;
+        padding: 10px 40px;
+        min-width: 200px;
+        width: 75%;
+        border-radius: 10px;
+    }
+    
+    .card-title {
+        font-size: 22px;
+        line-height: 1.1;
+    }
+    
+    .content {
+        gap: 30px;
+        padding: 15px;
+    }
+    
+    footer {
+        padding: 12px 0;
+        margin-top: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .image-container {
+        width: 90%;
+        max-width: 350px;
+    }
+    
+    .box {
+        height: 220px;
+        max-width: 350px;
+    }
+    
+    .card-overlay {
+        padding: 8px 30px;
+        min-width: 180px;
+        bottom: 20px;
+        width: 70%;
+        border-radius: 8px;
+    }
+    
+    .card-title {
+        font-size: 20px;
+        line-height: 1;
+    }
+    
+    .content {
+        gap: 25px;
+        padding: 10px;
+    }
+    
+    footer {
+        padding: 10px 0;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 360px) {
+    .image-container {
+        max-width: 300px;
+    }
+    
+    .box {
+        max-width: 300px;
+        height: 200px;
+    }
+    
+    .card-overlay {
+        padding: 6px 25px;
+        min-width: 160px;
+        width: 65%;
+    }
+    
+    .card-title {
+        font-size: 18px;
+    }
+}
